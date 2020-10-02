@@ -1,0 +1,32 @@
+substring('0000',0,(3-(length(items('Apply_to_each')?['resourceData/responseId']))))
+
+
+substring('0000',0,2)
+
+
+substring('0000',0,sub(3,(length(items('Apply_to_each')?['resourceData/responseId'])))
+
+
+Syntax correct - fails because integer doesn't have length
+substring('0000',0,sub(length(items('Apply_to_each')?['resourceData/responseId']),3))
+
+make int a string instead
+
+substring('0000',0,sub(4, length(string(items('Apply_to_each')?['resourceData/responseId']))))
+
+Relog after testing zero prefixes
+
+EBAY : goodwillexpress
+
+18-05690-39964
+
+5247712024
+
+8.18
+
+SI03 Shipping Issue - Missing package (tracked as delivered)
+
+sub(items('Apply_to_each')?['resourceData/responseId'],24)
+
+
+sub(items('Apply_to_each')?['resourceData/responseId'],-24)
